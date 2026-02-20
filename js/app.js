@@ -29,7 +29,7 @@ function calcularTotal(){
         resultado.innerHTML =
             ` <h2>Seu total:</h2>  
                 
-                    <p>você adquiriu ${v2} unidades com o valor unitário de R$${v1.toFixed(2)}</p>
+                    <p>Você adquiriu ${v2} unidades com o valor unitário de R$${v1.toFixed(2)} cada</p>
                     <p>O total de sua compra foi de: R$${total.toFixed(2)}</p>
                
             `
@@ -153,7 +153,7 @@ function lucro() {
         resultado.innerHTML =
             ` <h2>Seu Lucro:</h2> 
               
-                    <p>O preço de sua venda foi: R$${v1.toFixed(2)} | Enquanto o custo foi de: R$${v2}</p>
+                    <p>O preço de sua venda foi: R$${v1.toFixed(2)} | O custo foi de: R$${v2.toFixed(2)}</p>
                     <p>O total recebido de sua venda foi de: R$${total_lucro.toFixed(2)}</p>
         
             `
