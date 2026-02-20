@@ -19,10 +19,10 @@ function calcularTotal(){
         resultado.style.display = 'flex';
 
         resultado.innerHTML =
-            ` <h2>Seu total:<h2/> 
+            ` <h2>Seu total:</h2>  
                 
-                    <p>você adquiriu ${v2} unidades com o valor unitário de ${v1}<p/>
-                    <p>O total de sua compra foi de: R$${v1*v2}<p/>
+                    <p>você adquiriu ${v2} unidades com o valor unitário de ${v1}</p>
+                    <p>O total de sua compra foi de: R$${v1*v2}</p>
                
             `
             //fazer o p ao final de tudo
@@ -42,10 +42,10 @@ function desconto() {
         resultado.style.display = 'flex';
         let desconto = v1*v2 / 100
         resultado.innerHTML =
-            ` <h2>Desconto aplicado!<h2/> 
+            ` <h2>Desconto aplicado!</h2> 
                 
-                <p>foi aplicado a sua compra um desconto de ${v2}% sobre o valor de ${v1}<p/>
-                <p>O valor final do desconto foi: R$${v1- desconto}<p/>
+                <p>foi aplicado a sua compra um desconto de ${v2}% sobre o valor de ${v1}</p>
+                <p>O valor final do desconto foi: R$${v1- desconto}</p>
               
             `
             //fazer o p ao final de tudo
@@ -65,10 +65,10 @@ function juros() {
         resultado.style.display = 'flex';
         let acrescimo = v1 *v2 / 100
         resultado.innerHTML =
-            ` <h2>Acréscimo aplicado a compra<h2/> 
+            ` <h2>Acréscimo aplicado a compra</h2> 
                 
-                    <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de: ${v1}<p/>
-                    <p>O valor final com os juros foi de: R$${v1 + acrescimo}<p/>
+                    <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de: ${v1}</p>
+                    <p>O valor final com os juros foi de: R$${v1 + acrescimo}</p>
            
             `
             //fazer o p ao final de tudo
@@ -88,10 +88,10 @@ function comissao() {
         resultado.style.display = 'flex';
         let comissao = v2 / 100
         resultado.innerHTML =
-            ` <h2>Sua comissão:<h2/> 
+            ` <h2>Sua comissão:</h2> 
               
-                    <p>Comissão de ${v2}% sobre uma venda de ${v1}<p/>
-                    <p>O valor foi de: R$${comissao*v1}<p/>
+                    <p>Comissão de ${v2}% sobre uma venda de ${v1}</p>
+                    <p>O valor foi de: R$${comissao*v1}</p>
              
             `
             //fazer o p ao final de tudo
@@ -111,10 +111,10 @@ function lucro() {
         resultado.style.display = 'flex';
 
         resultado.innerHTML =
-            ` <h2>Seu Lucro:<h2/> 
+            ` <h2>Seu Lucro:</h2> 
               
-                    <p>Preço de sua venda ${v1}|Custo: ${v2}<p/>
-                    <p>O total recebido da venda foi de: R$${v1-v2}<p/>
+                    <p>Preço de sua venda ${v1}|Custo: ${v2}</p>
+                    <p>O total recebido da venda foi de: R$${v1-v2}</p>
         
             `
             //fazer o p ao final de tudo
