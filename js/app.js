@@ -21,7 +21,7 @@ function calcularTotal(){
         resultado.innerHTML =
             ` <h2>Seu total:</h2>  
                 
-                    <p>você adquiriu ${v2} unidades com o valor unitário de ${v1.toFixed(2)}</p>
+                    <p>você adquiriu ${v2} unidades com o valor unitário de R$${v1.toFixed(2)}</p>
                     <p>O total de sua compra foi de: R$${v1*v2.toFixed(2)}</p>
                
             `
@@ -44,7 +44,7 @@ function desconto() {
         resultado.innerHTML =
             ` <h2>Desconto aplicado!</h2> 
                 
-                <p>Foi aplicado a sua compra um desconto de ${v2}% sobre o valor de ${v1.toFixed(2)}</p>
+                <p>Foi aplicado a sua compra um desconto de ${v2}% sobre o valor de R$${v1.toFixed(2)}</p>
                 <p>O valor final do desconto foi: R$${v1- desconto.toFixed(2)}</p>
               
             `
@@ -69,7 +69,7 @@ function juros() {
         resultado.innerHTML =
             ` <h2>Acréscimo aplicado a compra</h2> 
                 
-                    <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de: ${v1.toFixed(2)}</p>
+                    <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de: R$${v1.toFixed(2)}</p>
                     <p>O valor final com os juros foi de: R$${total.toFixed(2)}</p>
            
             `
@@ -92,7 +92,7 @@ function comissao() {
         resultado.innerHTML =
             ` <h2>Sua comissão:</h2> 
               
-                    <p>Comissão de ${v2}% sobre uma venda de ${v1.toFixed(2)}</p>
+                    <p>Comissão de ${v2}% sobre uma venda de R$${v1.toFixed(2)}</p>
                     <p>O valor final foi de: R$${comissao*v1.toFixed(2)}</p>
              
             `
@@ -115,7 +115,7 @@ function lucro() {
         resultado.innerHTML =
             ` <h2>Seu Lucro:</h2> 
               
-                    <p>O preço de sua venda foi: ${v1.toFixed(2)}R$ | Enquanto o custo foi de: ${v2}R$</p>
+                    <p>O preço de sua venda foi: R$${v1.toFixed(2)} | Enquanto o custo foi de: R$${v2}</p>
                     <p>O total recebido de sua venda foi de: R$${v1-v2.toFixed(2)}</p>
         
             `
