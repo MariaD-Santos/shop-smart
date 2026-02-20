@@ -6,7 +6,7 @@ const input02 = document.getElementById('valor02');
 // pegando também o resultado já que vai ser o mesmo para as funções.
 const resultado = document.getElementById('resultado');
 resultado.style.display = 'none'
-function CalcularTotal(){
+function calcularTotal(){
     const v1 = parseFloat(input01.value);
     const v2 = parseFloat(input02.value);
 
@@ -29,7 +29,7 @@ function CalcularTotal(){
     }
 };
 
-function Desconto() {
+function desconto() {
     const v1 = parseFloat(input01.value);
     const v2 = parseFloat(input02.value);
 
@@ -52,7 +52,7 @@ function Desconto() {
     }
 };
 
-function Juros() {
+function juros() {
     const v1 = parseFloat(input01.value);
     const v2 = parseFloat(input02.value);
 
@@ -75,7 +75,7 @@ function Juros() {
     }
 };
 
-function Comissao() {
+function comissao() {
     const v1 = parseFloat(input01.value);
     const v2 = parseFloat(input02.value);
 
@@ -98,7 +98,7 @@ function Comissao() {
     }
 };
 
-function Lucro() {
+function lucro() {
     const v1 = parseFloat(input01.value);
     const v2 = parseFloat(input02.value);
 
@@ -121,7 +121,11 @@ function Lucro() {
     }
 };
 
-function Limpar() {
-    resultado.style.display = 'none', input01.value = '', input02.value = '', input01.focus();
+function limpar() {
+    
+    resultado.style.display = 'none'
+    input01.value = '' 
+    input02.value = ''
+    input01.focus();
     // devolvendo foco ao input01 com focus
 };
