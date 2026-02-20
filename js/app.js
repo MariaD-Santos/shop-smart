@@ -39,8 +39,8 @@ function desconto() {
     }
 
     else {
-        resultado.style.display = 'flex';
         let desconto = v1*v2 / 100
+        resultado.style.display = 'flex'
         resultado.innerHTML =
             ` <h2>Desconto aplicado!</h2> 
                 
@@ -83,17 +83,19 @@ function comissao() {
 
     // verificando se é um número ou não
     if (isNaN(v1) || isNaN(v2)) {
-        alert('Valor01 ou Valor02 inválido. Por favor digite um número')
+        resultado.style.display = 'flex';
+        
     }
 
     else {
-        resultado.style.display = 'flex';
         let comissao = v2 / 100
+        total = comissao * v1
+        resultado.style.display = 'flex';
         resultado.innerHTML =
             ` <h2>Sua comissão:</h2> 
               
                     <p>Comissão de ${v2}% sobre uma venda de R$${v1.toFixed(2)}</p>
-                    <p>O valor final foi de: R$${comissao*v1.toFixed(2)}</p>
+                    <p>O valor final foi de: R$${total.toFixed(2)}</p>
              
             `
             //fazer o p ao final de tudo
@@ -111,7 +113,6 @@ function lucro() {
 
     else {
         resultado.style.display = 'flex';
-
         resultado.innerHTML =
             ` <h2>Seu Lucro:</h2> 
               
